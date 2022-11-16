@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans";
+}
+
+.centralization {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.menu {
+  background-color: white;
+}
+.menu nav {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+.logo {
+  width: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo input {
+  width: 320px;
+  height: 32px;
+  border-radius: 999px;
+  border: none;
+  padding-left: 40px;
+  background: #f1f5f9;
+  background-image: url(./images/icons/lupa.svg);
+  background-repeat: no-repeat;
+  background-position-x: 10px;
+  background-position-y: 7px;
+}
+
+.log-right {
+  display: flex;
+  align-items: center;
+}
+.log-right p {
+  margin-left: 12px;
+  margin-right: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #475569;
+}
+.log-right span {
+  display: flex;
+  align-items: center;
+}
+.log-right span :nth-child(1) {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .log-right span {
+    margin-bottom: 30px;
+  }
+  .log-right span :nth-last-child(1) {
+    margin-left: 10px;
+  }
+  .logo {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .logo input {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 724px) {
+  p {
+    display: none;
+  }
+}
+@media screen and (max-width: 415px) {
+  .logo {
+    width: 200px;
+  }
+}/*# sourceMappingURL=style.css.map */
