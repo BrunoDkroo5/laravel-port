@@ -7,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="author" content="Bruno Wendell">
+    <meta name="author" content="Bruno Wendell">
     <!--link css-->
     <link rel="stylesheet" href="style.css">
-    
+
     <!--fontes usadas-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,25 +21,163 @@
 </head>
 
 <body>
-<div class="menu">
-    <nav>
-        <div class="logo">
-            <img src="images/logo-laravel.svg" alt="logo inicial laravel">
-            <input type="text" placeholder="Press / to search">
-        </div>
-        <div class="log-right">
-            <span>
-                <img src="images/icons/sininho.svg" alt="sino icone">
-                <img src="images/avatar/dc.png" alt="avatar logado">
-                <p>Digital Criative</p>
-                <img src="images/icons/setinha-down.svg" alt="setinha pra baixo">
-            </span>
-        </div>
-    </nav>
-</div>
-<div class="menu-dash">
-    
-</div>
+    <div class="menu dark-x">
+        <nav>
+            <div class="logo dark-y">
+                <img src="images/logo-laravel.svg" alt="logo inicial laravel">
+                <input type="text" placeholder="Press / to search">
+            </div>
+            <div class="log-right">
+                <span>
+                    <img src="images/icons/sininho.svg" alt="sino icone">
+                    <img src="images/avatar/dc.png" alt="avatar logado">
+                    <p>Digital Criative</p>
+                    <img src="images/icons/setinha-down.svg" alt="setinha pra baixo">
+                </span>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <nav class="drop-background">
+            <div class="option">
+                <button>
+                    <div class="btn-img">
+                        <img src="./images/icons/dashborad.svg" alt="icone Dashboard">Dashboards<img
+                            src="images/icons/setinha-down.svg" alt="setinha">
+                    </div>
+                    <div class="pop-up">
+                        <p> Main</p>
+                        <p> User Insights</p>
+                    </div>
+                    <!--pop-up-->
+                </button>
+            </div>
+            <!--option-->
+            <div class="option">
+                <button>
+                    <div class="btn-img">
+                        <img src="./images/icons/resourcers.svg" alt="icone Dashboard">Resourcers <img
+                            src="images/icons/setinha-down.svg" alt="setinha">
+                    </div>
+                    <!--btn-img-->
+                    <div class="pop-up">
+                        <p>Addresses</p>
+                        <p>Comments</p>
+                        <p>Posts</p>
+                        <p>Purchases</p>
+                        <p>Roles</p>
+                        <p>Tags</p>
+                        <p><strong>Users</strong></p>
+                    </div>
+                    <!--pop-up-->
+                </button>
+            </div>
+            <!--option-->
+        </nav>
+        <!--navgation-->
+        <div class="contents">
+            <div class="cards">
+                <div class="card">
+                    <div class="top-card">
+                        <h3>Current Users</h3>
+                        <select name="data">
+                            <option value="">1 day</option>
+                            <option value="">2 days</option>
+                            <option value="">3 days</option>
+                            <option value="">4 days</option>
+                            <option value="">5 days</option>
+                            <option value="">6 days</option>
+                            <option value="">7 days</option>
+                            <option value="">8 days</option>
+                            <option value="">9 days</option>
+                            <option value="">10 days</option>
+                            <option value="">11 days</option>
+                            <option value="">12 days</option>
+                            <option value="">13 days</option>
+                            <option value="">14 days</option>
+                            <option value="">15 days</option>
+                            <option value="">16 days</option>
+                            <option value="">17 days</option>
+                            <option value="">18 days</option>
+                            <option value="">19 days</option>
+                            <option value="">20 days</option>
+                            <option value="">21 days</option>
+                            <option value="">22 days</option>
+                            <option value="">23 days</option>
+                            <option value="">24 days</option>
+                            <option value="">25 days</option>
+                            <option value="">26 days</option>
+                            <option value="">27 days</option>
+                            <option value="">28 days</option>
+                            <option value="">29 days</option>
+                            <option value="">30 days</option>
+                        </select>
+                    </div>
+                    <!--top-card-->
+                    <div class="botton-card"><img src="images/icons/3g.svg" alt="icone sinal de cell">
+                        <h1>7</h1>
+                    </div>
+                    <!--bottom-card-->
+                </div>
+                <!--card-->
+                <div class="card">
+                    <div class="top-card">
+                        <h3>New Users</h3>
+                        <h4>15K</h4>
+                    </div>
+                    <!--top--->
+                    <h1>75%</h1>
+                    <div class="grafic">
+                        <div class="left"></div>
+                        <!--left-->
+                        <div class="right"></div>
+                        <!--right-->
+                    </div>
+                    <!--grafic-->
+                </div>
+                <!--card-->
+            </div> <!--cards-->
+            <h1 class="h1-users">Users</h1>
+            <div class="users">
+                    <input type="text" placeholder="Search">
+                <div class="btn-users"><button>Create Users</button></div>
+            </div> <!--users-->
+            <div class="tabela-users">
+                <div class="guia">
+                    
+                </div>
+                <table>
+                    <tr>
+                        <td>Id</td>
+                        <td>Avatar</td>
+                        <td>Name</td>
+                        <td>E-mail</td>
+                        <td>Admim</td>
+                        <td>2FA</td>
+                    </tr>
+                    <tr>
+                        <td>12350588</td>
+                        <td><img src="images/avatar/fulano1.png" alt=""></td>
+                        <td>ted</td>
+                        <td>brunorwendjdj@jkfjfm.com</td>
+                        <td><img src="images/icons/correct.svg" alt=""></td>
+                        <td><img src="images/icons/correct.svg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Ralf</td>
+                        <td>26</td>
+                        <td>Designer</td>
+                        <td>Estudante</td>
+                        <td>Estudante</td>
+                        <td>Estudante</td>
+                    </tr>
+                </table>
+            </div>
+        </div> <!--contents-->
+    </div>
+        <!--container-->
+
 </body>
 
 </html>
