@@ -10,9 +10,12 @@
   max-width: 1300px;
   margin: 0 auto;
 }
+body{
+  background: #f1f5f9;
+}
 .menu {
   background-color: white;
-  nav{
+  nav {
     display: flex;
     justify-content: space-between;
     margin-right: 30px;
@@ -61,34 +64,261 @@
     margin-right: 10px;
   }
 }
+.container {
+display: flex;
+}
+.menu-drop {
+  padding: 20px;
+  background: #f1f5f9;
+}
+.drop-background {
+  width: 193px;
+  height: 100vh;
+}
+.option {
+  padding: 20px;
+  strong {
+    color: #0ea5e9;
+    font-weight: 800;
+  }
+  button {
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #64748b;
+  
+    border: 0;
+    background-color: transparent;
+  
+    cursor: pointer;
+  }
+}
+
+
+.btn-img {
+  display: flex;
+  align-items: center;
+  img {
+    padding: 10px;
+  }
+}
+.pop-up {
+  display: none;
+  p {
+    text-align: start;
+    margin-top: 10px;
+    margin-left: 38px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.option button:focus .pop-up {
+  display: block;
+}
+.contents{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.cards {
+  display: flex;
+  height: 200px;
+}
+.card {
+  width: 352px;
+  height: 160px;
+  margin-top: 33px;
+  margin-left: 24px;
+  background: #ffffff;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1),
+    0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  select {
+    padding-left: 10px;
+    width: 89px;
+    height: 24px;
+
+    border: 1px solid #f1f5f9;
+    border-radius: 5px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: #64748b;
+  }
+  h1 {
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+
+    color: #64748b;
+  }
+}
+.top-card {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  h3 {
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #64748b;
+  }
+  h4 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #64748b;
+  }
+}
+.botton-card {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  h1 {
+    margin-left: 15px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+
+    color: #64748b;
+  }
+}
+
+
+.grafic {
+  display: flex;
+  padding: 20px;
+}
+.left {
+  width: 228px;
+  height: 16px;
+  border-radius: 10px 0 0 10px;
+  background-color: #22c55e;
+}
+.right {
+  width: 76px;
+  height: 16px;
+  border-radius: 0 10px 10px 0;
+  background-color: #e2e8f0;
+}
+.users{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+  input{
+    width: 320px;
+    height: 32px;
+
+    border-radius: 999px;
+    border: none;
+    padding-left: 40px;
+
+    background: white;
+    background-image: url(./images/icons/lupa.svg);
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 7px;
+  }
+}
+.h1-users{
+  padding: 20px;
+    font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+
+color: #64748B;
+
+}
+.btn-users{
+  
+  button{
+    width: 111px;
+    height: 36px;
+
+    border: 0;
+    border-radius: 5px;
+
+    color: white;
+    background-color: #0EA5E9;
+
+    font-weight: 800;
+font-size: 14px;
+line-height: 20px;
+
+    cursor: pointer;
+    
+  }
+}
+.tabela-users{
+ padding-left: 20px;
+  table{
+    width: 100%;
+    height: 500px;
+    background-color: white;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 960px){
+  .cards{
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 @media screen and (max-width: 900px) {
   .log-right {
-    span{
+    span {
       margin-bottom: 30px;
     }
-    span :nth-last-child(1){
+    span :nth-last-child(1) {
       margin-left: 10px;
     }
   }
-  .logo{
+  .logo {
     width: 500px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    input{
+    input {
       margin-top: 10px;
       margin-left: 10px;
+      margin-bottom: 10px;
     }
   }
 }
-@media screen and (max-width: 724px){
+
+@media screen and (max-width: 724px) {
   p {
     display: none;
   }
 }
-@media screen and (max-width: 415px){
-  .logo{
+
+@media screen and (max-width: 415px) {
+  .logo {
     width: 200px;
   }
 }
