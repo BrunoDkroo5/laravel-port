@@ -10,11 +10,14 @@
   max-width: 1300px;
   margin: 0 auto;
 }
-body{
+body {
   background: #f1f5f9;
 }
 .menu {
+  width: 100%;
+  position: fixed;
   background-color: white;
+  
   nav {
     display: flex;
     justify-content: space-between;
@@ -65,7 +68,7 @@ body{
   }
 }
 .container {
-display: flex;
+  display: flex;
 }
 .menu-drop {
   padding: 20px;
@@ -87,14 +90,13 @@ display: flex;
     font-size: 16px;
     line-height: 24px;
     color: #64748b;
-  
+
     border: 0;
     background-color: transparent;
-  
+
     cursor: pointer;
   }
 }
-
 
 .btn-img {
   display: flex;
@@ -117,14 +119,14 @@ display: flex;
 .option button:focus .pop-up {
   display: block;
 }
-.contents{
+.contents {
   display: flex;
   flex-direction: column;
   width: 80%;
 }
 .cards {
   display: flex;
-  height: 200px;
+  
 }
 .card {
   width: 352px;
@@ -192,7 +194,6 @@ display: flex;
   }
 }
 
-
 .grafic {
   display: flex;
   padding: 20px;
@@ -209,11 +210,11 @@ display: flex;
   border-radius: 0 10px 10px 0;
   background-color: #e2e8f0;
 }
-.users{
+.users {
   display: flex;
   justify-content: space-between;
   padding-left: 15px;
-  input{
+  input {
     width: 320px;
     height: 32px;
 
@@ -228,18 +229,16 @@ display: flex;
     background-position-y: 7px;
   }
 }
-.h1-users{
+.h1-users {
   padding: 20px;
-    font-weight: 400;
-font-size: 24px;
-line-height: 32px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
 
-color: #64748B;
-
+  color: #64748b;
 }
-.btn-users{
-  
-  button{
+.btn-users {
+  button {
     width: 111px;
     height: 36px;
 
@@ -247,23 +246,97 @@ color: #64748B;
     border-radius: 5px;
 
     color: white;
-    background-color: #0EA5E9;
+    background-color: #0ea5e9;
 
     font-weight: 800;
-font-size: 14px;
-line-height: 20px;
+    font-size: 14px;
+    line-height: 20px;
 
     cursor: pointer;
-    
   }
 }
-.tabela-users{
- padding-left: 20px;
-  table{
+.tabela-users {
+  padding-left: 20px;
+  table {
     width: 100%;
     height: 500px;
+    padding: 20px;
     background-color: white;
+
+    border-collapse: collapse;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #64748b;
   }
+  td {
+    border-bottom: 1px solid #f1f5f9;
+    span {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      font-style: normal;
+      font-weight: 800;
+      font-size: 14px;
+      line-height: 20px;
+      color: #0ea5e9;
+    }
+  }
+}
+.guia {
+  width: 100%;
+  height: 60px;
+  padding: 0 20px;
+  margin-top: 34px;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+.icons1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.icons2 {
+  display: flex;
+  align-items: center;
+  span {
+    margin-right: 20px;
+    gap: 20px;
+  }
+}
+thead {
+  width: 100%;
+
+  border: 20px solid #f1f5f9;
+
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 20px;
+
+  background-color: #f1f5f9;
+  color: #64748b;
+
+  text-transform: uppercase;
+}
+.footer-table {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 18px;
+  border-radius: 0 0 10px 10px;
+  background-color: white;
+
+  color: #cbd5e1;
 }
 
 
@@ -282,8 +355,15 @@ line-height: 20px;
 
 
 
-@media screen and (max-width: 960px){
-  .cards{
+
+
+
+
+
+
+
+@media screen and (max-width: 960px) {
+  .cards {
     display: flex;
     flex-direction: column;
   }
