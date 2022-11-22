@@ -81,6 +81,7 @@ body {
 }
 
 .option {
+  margin-top: 60px;
   padding: 20px;
 }
 .option strong {
@@ -98,11 +99,23 @@ body {
   cursor: pointer;
 }
 
+.option:nth-last-child(1) {
+  margin-top: 0;
+}
+
 .btn-img {
   display: flex;
   align-items: center;
 }
 .btn-img img {
+  padding: 10px;
+}
+
+.btn-img2 {
+  display: flex;
+  align-items: center;
+}
+.btn-img2 img {
   padding: 10px;
 }
 
@@ -122,6 +135,7 @@ body {
 }
 
 .contents {
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -305,11 +319,11 @@ body {
 
 thead {
   width: 100%;
-  border: 20px solid #f1f5f9;
+  border: 20px solid #f8fafc;
   font-weight: 800;
   font-size: 12px;
   line-height: 20px;
-  background-color: #f1f5f9;
+  background: #f8fafc;
   color: #64748b;
   text-transform: uppercase;
 }
@@ -329,10 +343,51 @@ thead {
   color: #cbd5e1;
 }
 
-@media screen and (max-width: 960px) {
-  .cards {
+.footer {
+  margin-top: 32px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #64748b;
+}
+.footer strong {
+  font-weight: 800;
+  color: #0ea5e9;
+}
+
+@media screen and (max-width: 1000px) {
+  .drop-background {
+    width: 400px;
     display: flex;
+    height: auto;
+  }
+  .option:nth-last-child(1) {
+    margin-top: 60px;
+  }
+  .contents {
+    margin-top: 0;
+  }
+  .container {
     flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    margin: 0;
+  }
+  .cards {
+    padding: 20px;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 940px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    margin-top: 10px;
   }
 }
 @media screen and (max-width: 900px) {
@@ -353,14 +408,66 @@ thead {
     margin-left: 10px;
     margin-bottom: 10px;
   }
+  .drop-background {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 760px) {
+  thead tr :nth-child(5) {
+    display: none;
+  }
+  tbody tr :nth-child(5) {
+    display: none;
+  }
+  tbody tr :nth-child(9) {
+    display: none;
+  }
+  .users {
+    flex-direction: column;
+    align-items: center;
+  }
+  .users button {
+    margin-top: 10px;
+  }
+  .h1-users {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 724px) {
-  p {
+  .log-right p {
     display: none;
+  }
+}
+@media screen and (max-width: 470px) {
+  .tabela-users {
+    padding-left: 0;
+  }
+  .drop-background {
+    width: 100%;
+  }
+  thead tr :nth-child(6) {
+    display: none;
+  }
+  tbody tr :nth-child(6) {
+    display: none;
+  }
+  tbody tr :nth-child(8) {
+    display: none;
+  }
+  nav {
+    width: 100%;
+    padding: 5px;
   }
 }
 @media screen and (max-width: 415px) {
   .logo {
     width: 200px;
+  }
+  .option {
+    margin-top: 80px;
+    padding: 0;
+  }
+  .option:nth-last-child(1) {
+    margin-top: 80px;
   }
 }/*# sourceMappingURL=style.css.map */
